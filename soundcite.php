@@ -58,7 +58,7 @@ function soundcite_register_button($buttons) {
 }
 
 function soundcite_add_plugin($plugin_array) {
-    $plugin_array['soundcite'] = SOUNDCITE_PLUGIN_URL . '/js/plugin.js';
+    $plugin_array['soundcite'] = plugins_url( '/js/plugin.js' , __FILE__ );
     return $plugin_array;
 }
 
